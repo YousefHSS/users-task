@@ -1,0 +1,8 @@
+<div class="input-group  p-5">
+    <input #searchBar id="searchBar" (keyup)="onSearch(searchBar.value)" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <button type="button" (click)="onSearch(searchBar.value)" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
+    @if (Filtered) {
+      <button (click)="onReset()" type="button" class="btn btn-outline-danger" data-mdb-ripple-init>reset</button>
+    }
+    
+  </div>

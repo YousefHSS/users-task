@@ -1,0 +1,14 @@
+<div class="p-4 rounded-5 bg-dark-subtle m-2 justify-content-center text-nowrap " >
+    <div class="d-flex justify-content-center ">
+      <img class="rounded-circle w-25" src="https://xsgames.co/randomusers/assets/avatars/male/{{user.id}}.jpg" alt="Card image cap">
+    </div>
+    <div class=" w-auto">
+      <div class="card-title d-flex justify-content-between">
+        <div>{{user.name}}</div> 
+        <fa-icon [icon]='faStar' aria-hidden="true" [style.color]="user.isAdmin ? 'green' : 'red'"></fa-icon>
+      </div>
+      <div class="card-text">{{user.email}}</div>
+      <div class="card-text"><strong>{{user.phone}}</strong></div>
+      
+    </div>
+  </div>
